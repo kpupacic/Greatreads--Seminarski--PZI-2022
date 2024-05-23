@@ -1,0 +1,135 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1px;
+    --gold-shade: rgb(215, 153, 34);
+    --beige-shade: rgb(239, 226, 186);
+    --red-shade: #f13c20;
+    --blue-shade: #4056a1;
+    --light-blue-shade: #abb4d7;
+    --lighter-blue-shade: #ccd2e7;
+}
+
+#wrapper {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    background-color: var(--beige-shade);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header > p {
+    color: var(--gold-shade);
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--light-blue-shade);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+}
+
+nav > a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 25px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+#search-container {
+    background-color: whitesmoke;
+    padding: 0.3em;
+    width: 12.5em;
+    margin-right: 30px;
+}
+
+#search-box {
+    border: none;
+    outline: none;
+    font-size: 1em;
+    text-decoration-color: lightgrey;
+}
+
+#profile-info {
+    top: 0px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    width: 500px;
+    padding: 30px 0px;
+    background-color: var(--light-blue-shade);
+}
+
+#profile-info img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#profile-info #personal-shorts {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#profile-info p {
+    width: 350px;
+}
+
+#posts-container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: 130px;
+    margin-bottom: 20px;
+}
+
+.post {
+    background-color: var(--lighter-blue-shade);
+    margin-top: 40px;
+    padding: 15px 25px;
+}
+
+.post img {
+    height: 150px;
+}
+
+.clickable-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.fa-heart {
+    color: var(--red-shade);
+}
+
+.fa-bookmark {
+    color: var(--red-shade);
+}
+
+.fa-comment {
+    color: var(--blue-shade);
+}
+
+.post .delete-button {
+    margin-left: 99%;
+}
+
+.hidden {
+    display: none;
+}
